@@ -9,7 +9,7 @@ public class Main {
         int arraySize = scanner.nextInt();
         int array []=new int[arraySize];
         int min = array[0];
-        for (int = 1; i < array.length; i++){
+        for (int = 2; i < array.length; i++){
             if array [i] < min {
                 min = array [i]
             }
