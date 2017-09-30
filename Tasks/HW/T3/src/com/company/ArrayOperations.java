@@ -13,6 +13,7 @@ public class ArrayOperations {
         int sumOdd = 0;
         int sumEvenPos = 0;
         int sumOddPos = 0;
+        int sumLocalMax = 0;
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
@@ -30,6 +31,11 @@ public class ArrayOperations {
                 sumOddPos = sumOddPos + array[i];
             }
         }
-        System.out.printf("Сумма четных элементов = %d \nСумма нечетных элементов = %d \nСумма элементов, стоящих на четной позиции = %d \nСумма элементов, стояших на нечетной позиции = %d", sumEven, sumOdd, sumEvenPos, sumOddPos);
+        for (int i = 1; i < array.length-1; i++) {
+            if (array[i] > array[i-1] && array[i] > array[i+1]) {
+                sumLocalMax++;
+            }
+        }
+        System.out.printf("Сумма четных элементов = %d \nСумма нечетных элементов = %d \nСумма элементов, стоящих на четной позиции = %d \nСумма элементов, стояших на нечетной позиции = %d \nКоличество локальных максимумов = %d", sumEven, sumOdd, sumEvenPos, sumOddPos, sumLocalMax);
     }
 }
