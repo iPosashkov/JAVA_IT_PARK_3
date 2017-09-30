@@ -36,7 +36,7 @@ public class Main {
             int value1 = input;
             input = input - value1;
 
-            System.out.println("Банкомат бы выдал следующее кол-во купюр и монет:\n" + value5000 + " по 5000;\n" + value1000 + " по 1000;\n" + value500 + " по 500;\n" + value100 + " по 100;\n" + value50 + " по 50;\n" + value10 + " по 10;\n" + value5 + " по 5;\n" + value2 + " по 2;\n" + value1 + " по 1.");
+            System.out.printf("Банкомат бы выдал следующее кол-во купюр и монет: \n%d по 5000; \n%d по 1000; \n%d по 500; \n%d по 100; \n%d по 50; \n%d по 10; \n%d по 5; \n%d по 2; \n%d по 1.", value5000, value1000, value500, value100, value50, value10, value5, value2, value1);
 
         }
     }
