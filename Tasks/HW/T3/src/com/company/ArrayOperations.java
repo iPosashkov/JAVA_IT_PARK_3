@@ -9,11 +9,11 @@ public class ArrayOperations {
         int arraySize = scanner.nextInt();
         System.out.println("Введите значения элементов массива через пробел:");
         int array[] = new int[arraySize];
-        int sumEven = 0;
-        int sumOdd = 0;
-        int sumEvenPos = 0;
-        int sumOddPos = 0;
-        int sumLocalMax = 0;
+        int sumEven = 0; // сумма четных значений
+        int sumOdd = 0; // сумма нечетных значений
+        int sumEvenPos = 0; // сумма элементов на четных позициях
+        int sumOddPos = 0; // сумма элеменов на нечетных позициях
+        int sumLocalMax = 0; // сумма локальных максимумов
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
