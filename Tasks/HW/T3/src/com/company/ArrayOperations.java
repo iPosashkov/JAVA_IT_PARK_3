@@ -31,11 +31,15 @@ public class ArrayOperations {
                 sumOddPos = sumOddPos + array[i];
             }
         }
-        for (int i = 1; i < array.length-1; i++) {
-            if (array[i] > array[i-1] && array[i] > array[i+1]) {
-                sumLocalMax++;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = array[i + 1] * (-1);
             }
         }
-        System.out.printf("Сумма четных элементов = %d \nСумма нечетных элементов = %d \nСумма элементов, стоящих на четной позиции = %d \nСумма элементов, стояших на нечетной позиции = %d \nКоличество локальных максимумов = %d", sumEven, sumOdd, sumEvenPos, sumOddPos, sumLocalMax);
+            System.out.printf("Сумма четных элементов = %d \nСумма нечетных элементов = %d \nСумма элементов, стоящих на четной позиции = %d \nСумма элементов, стояших на нечетной позиции = %d \nКоличество локальных максимумов = %d\n", sumEven, sumOdd, sumEvenPos, sumOddPos, sumLocalMax);
+            System.out.print("Массив с заменой нуля: ");
+            for (int i = 0; i < array.length; i++) {
+                System.out.print(array[i] + " ");
+            }
+        }
     }
-}
