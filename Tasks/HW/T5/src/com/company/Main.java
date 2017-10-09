@@ -1,7 +1,10 @@
 package com.company;
 import java.util.Date;
 import java.util.Scanner;
-
+// Григорианский в часы
+// Массив передач
+// В сравнении возвращать номер элемента массива (передачи)
+// Сравнение и ретурн в отдельном методе, масси[метод]
 public class Main {
 
     public static void main(String[] args) {
